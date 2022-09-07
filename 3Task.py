@@ -51,7 +51,6 @@ class Component:
         if len(fullEA)!=0: emptyalgorithm[fulld["Potential"][0]]=[fulld["Potential"][0]+self.formate(fullEA[0])]
         return fulld
 
-
 class Apple:
     pass
 class Orange:
@@ -75,7 +74,6 @@ class FirstAlgorithm:
         if isinstance(source_object, Lemon):
             return [Orange(3), Apple()]
         return []
-
 
 class EmptyAlgorithm:
     SPECIFICATION = {}
