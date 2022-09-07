@@ -43,7 +43,7 @@ class Component:
             fulld["Potential"].append(fulld["Potential"][0]+self.formate(step1fullFA[0]))
             fulld["Potential"].append(fulld["Potential"][0]+self.formate(step1fullFA[1]))
             if "Orange" in str(type(step1fullFA[0])):
-                step2=Orange(3)
+                step2=step1fullFA[0]
                 step2fullFA=(FirstAlgorithm().__call__(step2))
                 firstalgorithm[fulld["Potential"][0] + self.formate(step1fullFA[0])] = [fulld["Potential"][0]+self.formate(step1fullFA[0])+self.formate(step2fullFA[0])]
                 fulld["Potential"].append(fulld["Potential"][0]+self.formate(step1fullFA[0])+self.formate(step2fullFA[0]))
